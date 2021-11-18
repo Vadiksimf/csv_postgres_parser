@@ -21,7 +21,7 @@ Open localhost:3005 for making request on start work
 ## See result
 You can see resulting files in a core folder. The file will have results.csv name.
 
-## Explenation of the script working
+## Explanation of the script working
 A source file stored in "big_downloaded_files" folder.
 1. Start server and go to the main route (localhost:3005)
 2. The 'GET' request will start parsing task
@@ -29,5 +29,5 @@ A source file stored in "big_downloaded_files" folder.
 4. Work with the db makes in stream to not made memory leaks.
 5. Finally the file will be saved in main folder as resuls.csv
 
-## Coomplexity
-The complexity of the algorythm can be estimated ~ as O(n + 2z), where n is amount of rows in csv file, and z - is amount of cities. We need to check each row in a source file, and after it we need to update the cities in db or create new records with results to a new csv file. 2z shows that we make 2 times operations with each city.
+## Complexity
+The complexity of the algorythm can be estimated ~ as O(n + 2z), where n is amount of rows in a csv file, and z - is amount of cities. We need to check each row in a source file, and after it we need to update the cities in db or create new records with results to a new csv file. 2z shows that we make 2 times operations with each city.
